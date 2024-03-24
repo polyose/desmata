@@ -25,9 +25,10 @@
             src = ./.;
             hooks = {
               nixpkgs-fmt.enable = true;
-              unit-tests = {
+              ruff.enable = true;
+              gen-docs = {
                 enable = true;
-                name = "Regenerate Docs";
+                name = "Generate Docs";
                 entry = "nix run .#desmata -- docs generate";
                 files = "src/desmata/.*$";
                 language = "system";

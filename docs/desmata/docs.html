@@ -86,7 +86,7 @@ network partition than github.io</p>
 </span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>
 </span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="sd">To do this run:</span>
 </span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>
-</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a><span class="sd">   $ desmata docs view</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a><span class="sd">$ desmata docs view</span>
 </span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>
 </span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a><span class="sd">...and click the link.</span>
 </span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a><span class="sd">&quot;&quot;&quot;</span>
@@ -110,9 +110,9 @@ network partition than github.io</p>
 </span><span id="L-35"><a href="#L-35"><span class="linenos">35</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="L-36"><a href="#L-36"><span class="linenos">36</span></a>
 </span><span id="L-37"><a href="#L-37"><span class="linenos">37</span></a>    <span class="n">repo</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span>
-</span><span id="L-38"><a href="#L-38"><span class="linenos">38</span></a>    <span class="n">git</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;.git&quot;</span>
+</span><span id="L-38"><a href="#L-38"><span class="linenos">38</span></a>    <span class="n">git</span> <span class="o">=</span> <span class="n">repo</span> <span class="o">/</span> <span class="s2">&quot;.git&quot;</span>
 </span><span id="L-39"><a href="#L-39"><span class="linenos">39</span></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">out</span><span class="p">:</span>
-</span><span id="L-40"><a href="#L-40"><span class="linenos">40</span></a>        <span class="n">out</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;docs&quot;</span>
+</span><span id="L-40"><a href="#L-40"><span class="linenos">40</span></a>        <span class="n">out</span> <span class="o">=</span> <span class="n">repo</span> <span class="o">/</span> <span class="s2">&quot;docs&quot;</span>
 </span><span id="L-41"><a href="#L-41"><span class="linenos">41</span></a>
 </span><span id="L-42"><a href="#L-42"><span class="linenos">42</span></a>        <span class="c1"># is user at the root of a desmata repo?</span>
 </span><span id="L-43"><a href="#L-43"><span class="linenos">43</span></a>        <span class="n">checks</span> <span class="o">=</span> <span class="p">{</span><span class="n">out</span><span class="p">:</span> <span class="n">out</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="n">git</span><span class="p">:</span> <span class="n">git</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="n">repo</span><span class="p">:</span> <span class="n">repo</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;desmata&quot;</span><span class="p">}</span>
@@ -164,9 +164,9 @@ network partition than github.io</p>
 </span><span id="generate-36"><a href="#generate-36"><span class="linenos">36</span></a><span class="sd">    &quot;&quot;&quot;</span>
 </span><span id="generate-37"><a href="#generate-37"><span class="linenos">37</span></a>
 </span><span id="generate-38"><a href="#generate-38"><span class="linenos">38</span></a>    <span class="n">repo</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span>
-</span><span id="generate-39"><a href="#generate-39"><span class="linenos">39</span></a>    <span class="n">git</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;.git&quot;</span>
+</span><span id="generate-39"><a href="#generate-39"><span class="linenos">39</span></a>    <span class="n">git</span> <span class="o">=</span> <span class="n">repo</span> <span class="o">/</span> <span class="s2">&quot;.git&quot;</span>
 </span><span id="generate-40"><a href="#generate-40"><span class="linenos">40</span></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">out</span><span class="p">:</span>
-</span><span id="generate-41"><a href="#generate-41"><span class="linenos">41</span></a>        <span class="n">out</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;docs&quot;</span>
+</span><span id="generate-41"><a href="#generate-41"><span class="linenos">41</span></a>        <span class="n">out</span> <span class="o">=</span> <span class="n">repo</span> <span class="o">/</span> <span class="s2">&quot;docs&quot;</span>
 </span><span id="generate-42"><a href="#generate-42"><span class="linenos">42</span></a>
 </span><span id="generate-43"><a href="#generate-43"><span class="linenos">43</span></a>        <span class="c1"># is user at the root of a desmata repo?</span>
 </span><span id="generate-44"><a href="#generate-44"><span class="linenos">44</span></a>        <span class="n">checks</span> <span class="o">=</span> <span class="p">{</span><span class="n">out</span><span class="p">:</span> <span class="n">out</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="n">git</span><span class="p">:</span> <span class="n">git</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="n">repo</span><span class="p">:</span> <span class="n">repo</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;desmata&quot;</span><span class="p">}</span>

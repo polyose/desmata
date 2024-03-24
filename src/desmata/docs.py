@@ -11,7 +11,7 @@ network partition than github.io
 
 To do this run:
 
-   $ desmata docs view
+$ desmata docs view
 
 ...and click the link.
 """
@@ -35,9 +35,9 @@ def generate(app: AppContext, out: Path | None = None):
     """
 
     repo = Path.cwd()
-    git = Path.cwd() / ".git"
+    git = repo / ".git"
     if not out:
-        out = Path.cwd() / "docs"
+        out = repo / "docs"
 
         # is user at the root of a desmata repo?
         checks = {out: out.exists(), git: git.exists(), repo: repo.name == "desmata"}
